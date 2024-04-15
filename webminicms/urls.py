@@ -24,6 +24,7 @@ urlpatterns = [
     # Autres URLs de votre application Django
     path('admin/', admin.site.urls),
     path('users/', include('cms_users.urls')),
+    path('content/', include('cms_content.urls')),
 
     # HomePage Road
     path('', TemplateView.as_view(template_name='index.html'), name='homepage'),
