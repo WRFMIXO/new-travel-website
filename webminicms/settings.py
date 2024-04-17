@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-FRONTEND_DIR = os.path.join(BASE_DIR, 'webfront', 'build')
+FRONTEND_DIR = os.path.join(BASE_DIR, 'cms_web', 'build')
 
 # Définir le chemin vers les fichiers statiques Django en mode production
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
