@@ -29,6 +29,4 @@ urlpatterns = [
     # HomePage Road
     path('', TemplateView.as_view(template_name='index.html'), name='homepage'),
     path('manage/login/', TemplateView.as_view(template_name='index.html'), name='admin-login'),
-    
-    re_path(r'^.*$', TemplateView.as_view(template_name='index.html')),  # URL générique pour servir l'application React.js
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
