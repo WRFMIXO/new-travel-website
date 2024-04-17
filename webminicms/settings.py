@@ -128,6 +128,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+INDEX_HTML_DIR = os.path.join(BASE_DIR, 'webfront', 'public')
+
 FRONTEND_DIR = os.path.join(BASE_DIR, 'webfront', 'build')
 
 # Définir le chemin vers les fichiers statiques Django en mode production
@@ -139,7 +141,7 @@ STATICFILES_DIRS = [
 
 # Configurez le dossier de build comme dossier de templates
 TEMPLATES[0]['DIRS'] = [
-    os.path.join(FRONTEND_DIR),
+    os.path.join(INDEX_HTML_DIR),
 ]
 
 # Default primary key field type
